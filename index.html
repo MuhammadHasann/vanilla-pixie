@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Pixie</title>
+
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <section class="cont_hero">
+      <div class="hero">
+        <div class="hero_text">
+          <div class="heading">
+            <h1 id="heading1">Ignite your ideas.</h1>
+            <h1 id="heading2">Shape your narrative.</h1>
+            <h1 id="heading3">Simplify your story.</h1>
+          </div>
+          <div id="paragraph" class="paragraph">
+            <p>
+              Pixie is your all-in-one workspace for seamless content research
+              and creation.
+            </p>
+            <p>
+              It blends multi-modal AI with personal touch, for impactful
+              content, in any format.
+            </p>
+          </div>
+          <div id="description" class="description">
+            <p>Elevate productivity & creativity for</p>
+            <button>content creators</button>
+          </div>
+          <div id="action" class="action">
+            <button id="explore">Start Exploring</button>
+            <button id="watch">Watch Demo</button>
+          </div>
+        </div>
+        <dotlottie-player
+          class="lottie_hero"
+          src="public/hero_animation.json"
+          background="transparent"
+          speed="1"
+          autoplay
+        ></dotlottie-player>
+      </div>
+    </section>
+
+    <script
+      src="https://unpkg.com/@dotlottie/player-component@latest/dist/dotlottie-player.mjs"
+      type="module"
+    ></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/gsap.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/ScrollTrigger.min.js"></script>
+
+    <script src="script/hero.js"></script>
+    <script src="script/lottieHero.js"></script>
+  </body>
+</html>
