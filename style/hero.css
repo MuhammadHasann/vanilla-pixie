@@ -1,24 +1,8 @@
-@import url("https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap");
-
-:root {
-  --accent: #e01f75;
-  --dark: #242424;
-  --light: #f8f9fa;
-  --paragraph: #737373;
-}
-
-* {
-  padding: 0;
-  margin: 0;
-  box-sizing: border-box;
-  font-family: "Outfit", sans-serif;
-}
-
 .cont_hero {
   position: relative;
 
   width: 100%;
-  height: 250vh;
+  min-height: 100vh;
   background-color: var(--light);
 }
 

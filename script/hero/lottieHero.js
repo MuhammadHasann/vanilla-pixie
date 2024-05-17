@@ -1,4 +1,5 @@
 const lottieHero = document.querySelector(".lottie_hero");
+
 let isPlayingBackward = false;
 
 const toggleAnimationDirection = (backward) => {
@@ -10,16 +11,16 @@ const toggleAnimationDirection = (backward) => {
   }
 };
 
-lottieHero.addEventListener("complete", (e) => {
+lottieHero.addEventListener("complete", () => {
   toggleAnimationDirection(isPlayingBackward);
 });
 
 gsap.registerPlugin(ScrollTrigger);
 
 ScrollTrigger.create({
-  trigger: ".cont_hero",
+  trigger: "#cont_hero",
   start: "top top",
-  end: "bottom bottom",
+  end: "bottom top",
   scrub: true,
   onUpdate: (self) => {
     const progressThreshold = 0.1;
