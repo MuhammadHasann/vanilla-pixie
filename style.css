@@ -64,7 +64,7 @@
   column-gap: 0.5rem;
 }
 
-.hero_text .description button {
+.hero_text .description .btn_action-spanner {
   padding: 0.3rem 0.75rem;
 
   width: fit-content;

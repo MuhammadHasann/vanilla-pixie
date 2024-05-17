@@ -11,12 +11,12 @@
     <section class="cont_hero">
       <div class="hero">
         <div class="hero_text">
-          <div class="heading">
+          <div id="cont_heading" class="heading">
             <h1 id="heading1">Ignite your ideas.</h1>
             <h1 id="heading2">Shape your narrative.</h1>
             <h1 id="heading3">Simplify your story.</h1>
           </div>
-          <div id="paragraph" class="paragraph">
+          <div id="paragraph" class="cont_text-description paragraph">
             <p>
               Pixie is your all-in-one workspace for seamless content research
               and creation.
@@ -26,16 +26,19 @@
               content, in any format.
             </p>
           </div>
-          <div id="description" class="description">
+          <div id="description" class="cont_text-description description">
             <p>Elevate productivity & creativity for</p>
-            <button>content creators</button>
+            <button class="btn_action-spanner">
+              <span class="action-spanner"></span>
+            </button>
           </div>
-          <div id="action" class="action">
+          <div id="action" class="cont_text-description action">
             <button id="explore">Start Exploring</button>
             <button id="watch">Watch Demo</button>
           </div>
         </div>
         <dotlottie-player
+          id="lottie_hero"
           class="lottie_hero"
           src="public/hero_animation.json"
           background="transparent"
@@ -55,5 +58,6 @@
 
     <script src="script/hero.js"></script>
     <script src="script/lottieHero.js"></script>
+    <script src="script/actionSpanner.js"></script>
   </body>
 </html>

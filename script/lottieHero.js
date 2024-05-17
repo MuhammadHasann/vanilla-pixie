@@ -17,17 +17,11 @@ lottieHero.addEventListener("complete", (e) => {
 gsap.registerPlugin(ScrollTrigger);
 
 ScrollTrigger.create({
-  trigger: ".cont",
+  trigger: ".cont_hero",
   start: "top top",
   end: "bottom bottom",
   scrub: true,
   onUpdate: (self) => {
-    gsap.to("#box", {
-      y: self.progress * 300,
-      rotation: self.progress * 360,
-      overwrite: "auto",
-    });
-
     const progressThreshold = 0.1;
     const isPastThreshold = self.progress > progressThreshold;
 
