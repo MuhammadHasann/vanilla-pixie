@@ -10,6 +10,24 @@
   opacity: 0.3;
 }
 
+.svg-line path {
+  stroke-dasharray: var(--dash-array);
+  animation: draw 1.5s ease-in forwards;
+}
+
+@keyframes draw {
+  from {
+    stroke-dashoffset: 100;
+
+    opacity: 0;
+  }
+  to {
+    stroke-dashoffset: 0;
+
+    opacity: 1;
+  }
+}
+
 .backline-2 {
   overflow-y: clip;
 
