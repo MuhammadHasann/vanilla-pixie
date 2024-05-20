@@ -1,0 +1,25 @@
+.backline-1 {
+  position: absolute;
+  /* z-index: 10; */
+  top: 0;
+  left: 0;
+
+  width: 100%;
+  height: fit-content;
+
+  opacity: 0.3;
+}
+
+.backline-2 {
+  overflow-y: clip;
+
+  position: absolute;
+  /* z-index: 10; */
+  top: var(--top-backline-1);
+  left: 0;
+
+  width: 100%;
+  height: fit-content;
+
+  opacity: 0.3;
+}

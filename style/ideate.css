@@ -5,7 +5,7 @@
 
   width: 100%;
   height: 150vh;
-  background-color: var(--light);
+  /* background-color: var(--light); */
 }
 
 .common-ideate {
@@ -60,6 +60,7 @@
 
   width: 100%;
   height: fit-content;
+  background-color: var(--light);
 
   border-radius: 1rem;
   box-shadow: 0px 8px 20px 2px #e01f763a;
